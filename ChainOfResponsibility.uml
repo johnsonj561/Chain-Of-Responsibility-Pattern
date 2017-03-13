@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_gqGisAgBEeezoMBtygPl7w" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_kzD8IAgBEeezoMBtygPl7w" name="Handler"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qdl2AAgBEeezoMBtygPl7w" clientDependency="_sJq9UAgBEeezoMBtygPl7w" name="Client"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_sJq9UAgBEeezoMBtygPl7w" name="Usage1" client="_qdl2AAgBEeezoMBtygPl7w" supplier="_kzD8IAgBEeezoMBtygPl7w"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uUvtwwgBEeezoMBtygPl7w" name="successor" memberEnd="_uUvtxAgBEeezoMBtygPl7w _uUvtwAgBEeezoMBtygPl7w" navigableOwnedEnd="_uUvtwAgBEeezoMBtygPl7w">
+    <ownedEnd xmi:id="_uUvtxAgBEeezoMBtygPl7w" name="handler" type="_kzD8IAgBEeezoMBtygPl7w" association="_uUvtwwgBEeezoMBtygPl7w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uUvtxQgBEeezoMBtygPl7w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uUvtxggBEeezoMBtygPl7w" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_uUvtwAgBEeezoMBtygPl7w" name="handler" type="_kzD8IAgBEeezoMBtygPl7w" association="_uUvtwwgBEeezoMBtygPl7w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uUvtwQgBEeezoMBtygPl7w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uUvtwggBEeezoMBtygPl7w" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zVrRAAgBEeezoMBtygPl7w" name="ConcreteHandlerA">
+    <generalization xmi:id="_RsEAoAgCEeezoMBtygPl7w" general="_kzD8IAgBEeezoMBtygPl7w"/>
+    <ownedAttribute xmi:id="__yn54AgBEeezoMBtygPl7w" name="successor" visibility="public" type="_kzD8IAgBEeezoMBtygPl7w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AY0-QAgCEeezoMBtygPl7w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AY0-QQgCEeezoMBtygPl7w" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_AY-vQAgCEeezoMBtygPl7w">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_L2vMAAgCEeezoMBtygPl7w" name="handleRequest"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_60RwkAgBEeezoMBtygPl7w" name="ConcreteHandlerB">
+    <generalization xmi:id="_SMWDMAgCEeezoMBtygPl7w" general="_kzD8IAgBEeezoMBtygPl7w"/>
+    <ownedAttribute xmi:id="_GOZDcAgCEeezoMBtygPl7w" name="successor" visibility="public" type="_kzD8IAgBEeezoMBtygPl7w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IEH2AAgCEeezoMBtygPl7w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IEH2AQgCEeezoMBtygPl7w" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_IEH2AggCEeezoMBtygPl7w">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_MuTtMAgCEeezoMBtygPl7w" name="handleRequest"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7-HGcAgBEeezoMBtygPl7w" name="ConcreteHandlerC">
+    <generalization xmi:id="_SkSCEAgCEeezoMBtygPl7w" general="_kzD8IAgBEeezoMBtygPl7w"/>
+    <ownedAttribute xmi:id="_Ihtw8AgCEeezoMBtygPl7w" name="successor" visibility="public" type="_kzD8IAgBEeezoMBtygPl7w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J6UioAgCEeezoMBtygPl7w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J6UioQgCEeezoMBtygPl7w" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_J6dskAgCEeezoMBtygPl7w">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_QMC_YAgCEeezoMBtygPl7w" name="handleRequest"/>
+  </packagedElement>
+</uml:Model>
